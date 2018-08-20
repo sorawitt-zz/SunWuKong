@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		223AC2B5212AA24200892347 /* SunWuKong.h in Headers */ = {isa = PBXBuildFile; fileRef = 223AC2B3212AA24200892347 /* SunWuKong.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C93FD06BCF9B02CD075003A4 /* Pods_SunWuKong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93816EE6930A498CC2A55358 /* Pods_SunWuKong.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		223AC2B0212AA24200892347 /* SunWuKong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SunWuKong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		223AC2B3212AA24200892347 /* SunWuKong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SunWuKong.h; sourceTree = "<group>"; };
 		223AC2B4212AA24200892347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5934C762ED91E3EDB056C620 /* Pods-SunWuKong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunWuKong.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunWuKong/Pods-SunWuKong.debug.xcconfig"; sourceTree = "<group>"; };
+		93816EE6930A498CC2A55358 /* Pods_SunWuKong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunWuKong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F583B12A6F85270372DBFD07 /* Pods-SunWuKong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunWuKong.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunWuKong/Pods-SunWuKong.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93FD06BCF9B02CD075003A4 /* Pods_SunWuKong.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +37,8 @@
 			children = (
 				223AC2B2212AA24200892347 /* SunWuKong */,
 				223AC2B1212AA24200892347 /* Products */,
+				B26AEB79D66D49B187897BF5 /* Pods */,
+				C16E1C229310866C50175957 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +59,23 @@
 			path = SunWuKong;
 			sourceTree = "<group>";
 		};
+		B26AEB79D66D49B187897BF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5934C762ED91E3EDB056C620 /* Pods-SunWuKong.debug.xcconfig */,
+				F583B12A6F85270372DBFD07 /* Pods-SunWuKong.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C16E1C229310866C50175957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93816EE6930A498CC2A55358 /* Pods_SunWuKong.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -70,6 +94,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 223AC2B8212AA24200892347 /* Build configuration list for PBXNativeTarget "SunWuKong" */;
 			buildPhases = (
+				B7E953F6BF5FE26814A8BAA9 /* [CP] Check Pods Manifest.lock */,
 				223AC2AB212AA24200892347 /* Sources */,
 				223AC2AC212AA24200892347 /* Frameworks */,
 				223AC2AD212AA24200892347 /* Headers */,
@@ -124,6 +149,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7E953F6BF5FE26814A8BAA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SunWuKong-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		223AC2AB212AA24200892347 /* Sources */ = {
@@ -258,6 +304,7 @@
 		};
 		223AC2B9212AA24200892347 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5934C762ED91E3EDB056C620 /* Pods-SunWuKong.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -283,6 +330,7 @@
 		};
 		223AC2BA212AA24200892347 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F583B12A6F85270372DBFD07 /* Pods-SunWuKong.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
