@@ -29,7 +29,7 @@ s.source = { :git => "https://github.com/sorawitt/SunWuKong.git", :tag => "#{s.v
 # For example,
 # s.source = { :git => "https://github.com/JRG-Developer/RWPickFlavor.git", :tag => "#{s.version}"}
 
-
+s.static_framework = true
 # 7
 s.dependency 'Firebase/Core'
 s.dependency 'Firebase/Storage'

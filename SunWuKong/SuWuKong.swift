@@ -38,6 +38,12 @@ public class SunWuKong {
         fetchImage(with: url, progress: progress, completion: completion)
     }
     
+    public func image(with storageRef: StorageReference,
+                      progress: DownloadProgress?,
+                      completion: @escaping ImageDownloadCompletion) {
+        fetchImage(with: storageRef, progress: progress, completion: completion)
+    }
+    
     private func fetchImage(with storageRef: StorageReference,
                             progress: DownloadProgress?,
                             completion: ImageDownloadCompletion?) {
