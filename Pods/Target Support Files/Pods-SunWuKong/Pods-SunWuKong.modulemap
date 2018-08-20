@@ -1,0 +1,6 @@
+framework module Pods_SunWuKong {
+  umbrella header "Pods-SunWuKong-umbrella.h"
+
+  export *
+  module * { export * }
+}

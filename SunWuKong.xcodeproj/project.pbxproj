@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220C8AE4212AAD1B00DBB92A /* SuWuKong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8AE3212AAD1B00DBB92A /* SuWuKong.swift */; };
+		220C8AE8212AAE2300DBB92A /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8AE5212AAE2300DBB92A /* Downloader.swift */; };
+		220C8AE9212AAE2300DBB92A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8AE6212AAE2300DBB92A /* Cache.swift */; };
+		220C8AEA212AAE2300DBB92A /* UIImageView+SunWuKong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8AE7212AAE2300DBB92A /* UIImageView+SunWuKong.swift */; };
 		223AC2B5212AA24200892347 /* SunWuKong.h in Headers */ = {isa = PBXBuildFile; fileRef = 223AC2B3212AA24200892347 /* SunWuKong.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C93FD06BCF9B02CD075003A4 /* Pods_SunWuKong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93816EE6930A498CC2A55358 /* Pods_SunWuKong.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220C8AE3212AAD1B00DBB92A /* SuWuKong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuWuKong.swift; sourceTree = "<group>"; };
+		220C8AE5212AAE2300DBB92A /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		220C8AE6212AAE2300DBB92A /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		220C8AE7212AAE2300DBB92A /* UIImageView+SunWuKong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+SunWuKong.swift"; sourceTree = "<group>"; };
 		223AC2B0212AA24200892347 /* SunWuKong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SunWuKong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		223AC2B3212AA24200892347 /* SunWuKong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SunWuKong.h; sourceTree = "<group>"; };
 		223AC2B4212AA24200892347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +63,10 @@
 			children = (
 				223AC2B3212AA24200892347 /* SunWuKong.h */,
 				223AC2B4212AA24200892347 /* Info.plist */,
+				220C8AE3212AAD1B00DBB92A /* SuWuKong.swift */,
+				220C8AE6212AAE2300DBB92A /* Cache.swift */,
+				220C8AE5212AAE2300DBB92A /* Downloader.swift */,
+				220C8AE7212AAE2300DBB92A /* UIImageView+SunWuKong.swift */,
 			);
 			path = SunWuKong;
 			sourceTree = "<group>";
@@ -120,6 +132,7 @@
 				TargetAttributes = {
 					223AC2AF212AA24200892347 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -176,6 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220C8AE8212AAE2300DBB92A /* Downloader.swift in Sources */,
+				220C8AE9212AAE2300DBB92A /* Cache.swift in Sources */,
+				220C8AEA212AAE2300DBB92A /* UIImageView+SunWuKong.swift in Sources */,
+				220C8AE4212AAD1B00DBB92A /* SuWuKong.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5934C762ED91E3EDB056C620 /* Pods-SunWuKong.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -323,6 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SunWuKong;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F583B12A6F85270372DBFD07 /* Pods-SunWuKong.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
