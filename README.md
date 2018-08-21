@@ -27,12 +27,12 @@ pod 'SunWuKong'
 ## Usage
 
 ### UIImageView
-> With Storage Reference
+- With Storage Reference
 ```swift
 let ref: StorageReference = ....
 imageView.wk_setImage(with: ref)
 ```
-> with placeholder, progress and completion handler
+- With placeholder, progress and completion handler
 ```swift
 func setImageWithStorageReference() {
   let ref: StorageReference =  ....
@@ -45,12 +45,12 @@ func setImageWithStorageReference() {
 }
 ```
 
-> With URL
+- With URL
 ```swift
 let url: URL = ....
 imageView.wk_setImage(with: url)
 ```
->with placeholder, progress and completion handler
+- With placeholder, progress and completion handler
 
 ```swift
 func setImageWithURL() {
