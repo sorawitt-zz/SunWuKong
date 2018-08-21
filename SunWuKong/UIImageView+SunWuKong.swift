@@ -33,6 +33,23 @@ extension UIImageView {
         }
     }
     
+    public func wk_setImage(with stringUrl: String?, placeholder: UIImage? = nil, progress: DownloadProgress? = nil, completion: ImageDownloadCompletion? = nil) {
+        guard let strUrl = stringUrl else { return }
+        guard let url = URL(string: strUrl) else {
+            completion?(nil)
+            return
+        }
+        wkImageUrl = url
+        image = placeholder
+        SunWuKong.default.image(with: url, progress: progress) { [weak self] image in
+            guard let weakSelf = self else { return }
+            guard weakSelf.wkImageUrl == url else { return }
+            DispatchQueue.main.async {
+                weakSelf.image = image
+                completion?(image)
+            }
+        }
+    }
     public func wk_setImage(with url: URL?, placeholder: UIImage? = nil, progress: DownloadProgress? = nil, completion: ImageDownloadCompletion? = nil) {
         wkImageUrl = url
         image = placeholder
