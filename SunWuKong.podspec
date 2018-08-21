@@ -9,7 +9,7 @@ s.requires_arc = true
 s.swift_version = '4.0'
 
 # 2
-s.version = "0.0.1-beta-demo"
+s.version = "0.0.2"
 
 # 3
 s.license = { :type => "MIT", :text => <<-LICENSE
