@@ -1,5 +1,5 @@
 # SunWuKong
-FIRStorage for iOS with caching and offline capabilities
+
 
 ## Requirements
 Swift 4
@@ -46,7 +46,7 @@ with placeholder, progress and completion handler
 
 ```
 func setImageWithURL() {
-  let url = URL(string: "…")
+  let url: URL = ...
   imageView.wk_setImage(with: url, placeholder: UIImage(named: "placeholder"), progress: { received, total in
     // Report progress
   }, completion: { [weak self] image in
@@ -68,9 +68,9 @@ SunWuKong.shared.image(with: ref) { [weak self] image in
 ### Create custom storage caches
 
 ```swift
-let oneDayCache = DiskCache(name: "customCache", cacheDuration: 60 * 60 * 24)
-let wukongCache = SunWuKong(cache: oneWeekDiskCache, download)
-
+let oneDaySeconds: TimeInterval = 60 * 60 * 24
+let oneDayCache = DiskCache(name: "customCache", cacheDuration: oneDaySeconds)
+let wukongCache = SunWuKong(cache: oneWeekDiskCache)
 ```
 
 ### Cleaning/pruning the cache
