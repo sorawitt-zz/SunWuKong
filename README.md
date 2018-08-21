@@ -96,7 +96,7 @@ method of your disk caches to remove any old files:
 
 ## Author
 
-Sorawit Trutsat, sorawit.tr@gmail.com
+WuKong, sorawit.tr@gmail.com
 
 ## License
 
