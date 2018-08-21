@@ -19,7 +19,7 @@ protocol Cache {
 }
 
 
-open class DiskCache: Cache {
+public class DiskCache: Cache {
     
     let name: String
     let cachePath: String
