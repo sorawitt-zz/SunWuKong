@@ -34,7 +34,6 @@ open class DiskCache: Cache {
     public init(name: String, cacheDuration: TimeInterval = 3600) {
         self.name = name
         self.cachePath = NSSearchPathForDirectoriesInDomains(.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first! + "/" + name
-        //self.cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first! + "/" + name
         self.cacheDuration = cacheDuration
         
         fileManager = FileManager()
