@@ -1,8 +1,10 @@
 # SunWuKong
 
+SunWuKong is a pure-Swift library for downloading and caching images from the Firebase Storage and URL. This project is heavily inspired by the popular [FirebaseStorageCahce](https://github.com/antonyharfield/FirebaseStorageCache) and [MapleBacon](https://github.com/JanGorman/MapleBacon) .
+
 [![Version](https://img.shields.io/cocoapods/v/SunWuKong.svg?style=flat)](http://cocoapods.org/pods/SunWuKong)
-[![License](https://img.shields.io/cocoapods/v/SunWuKong.svg?style=flat)](http://cocoapods.org/pods/SunWuKong)
-[![Platform](https://img.shields.io/cocoapods/v/SunWuKong.svg?style=flat)](http://cocoapods.org/pods/SunWuKong)
+[![License](https://img.shields.io/cocoapods/l/SunWuKong.svg?style=flat)](http://cocoapods.org/pods/SunWuKong)
+[![Platform](https://img.shields.io/cocoapods/p/SunWuKong.svg?style=flat)](http://cocoapods.org/pods/SunWuKong)
 
 ## Requirements
 Swift 4
