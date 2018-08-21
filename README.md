@@ -2,9 +2,12 @@
 
 
 ## Requirements
-Swift 4__
-iOS 9.0+__
-Xcode 9+__
+Swift 4
+
+iOS 9.0+
+
+Xcode 9+
+
 This project assumes that you have already [setup Firebase for iOS](https://firebase.google.com/docs/ios/setup).
 
 ## Installation
