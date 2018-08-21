@@ -2,9 +2,9 @@
 
 
 ## Requirements
-Swift 4
-iOS 9.0+
-Xcode 9+
+Swift 4__
+iOS 9.0+__
+Xcode 9+__
 This project assumes that you have already [setup Firebase for iOS](https://firebase.google.com/docs/ios/setup).
 
 ## Installation
@@ -19,7 +19,7 @@ pod 'SunWuKong'
 ## Usage
 
 ### UIImageView
-### With Storage Reference
+> With Storage Reference
 ```swift
 let ref: StorageReference = ....
 imageView.wk_setImage(with: ref)
@@ -27,7 +27,7 @@ imageView.wk_setImage(with: ref)
 with placeholder, progress and completion handler
 ```
 func setImageWithStorageReference() {
-  let url: URL = ....
+  let ref: StorageReference = Storage.storage().reference()
   imageView.wk_setImage(with: ref, placeholder: UIImage(named: "placeholder"), progress: { received, total in
     // Report progress
   }, completion: { [weak self] image in
@@ -39,14 +39,14 @@ func setImageWithStorageReference() {
 
 ### With URL
 ```swift
-let url: URL = ...
+let url: URL = URL(string: "…")
 imageView.wk_setImage(with: url)
 ```
-with placeholder, progress and completion handler
+>with placeholder, progress and completion handler
 
 ```
 func setImageWithURL() {
-  let url: URL = ...
+  let url: URL = URL(string: "…")
   imageView.wk_setImage(with: url, placeholder: UIImage(named: "placeholder"), progress: { received, total in
     // Report progress
   }, completion: { [weak self] image in
