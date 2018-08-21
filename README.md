@@ -78,7 +78,7 @@ SunWuKong.shared.image(with: ref) { [weak self] image in
 ```swift
 let oneDaySeconds: TimeInterval = 60 * 60 * 24
 let oneDayCache = DiskCache(name: "customCache", cacheDuration: oneDaySeconds)
-let wukongCache = SunWuKong(cache: oneWeekDiskCache)
+let wukongCache = SunWuKong(cache: oneDayCache)
 ```
 
 ### Cleaning/pruning the cache
