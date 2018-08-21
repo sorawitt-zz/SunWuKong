@@ -19,7 +19,7 @@ protocol Cache {
 }
 
 
-public class DiskCache: Cache {
+open class DiskCache: Cache {
     
     let name: String
     let cachePath: String
@@ -31,7 +31,7 @@ public class DiskCache: Cache {
     private let readQueue: DispatchQueue
     private let fileManager: FileManager
     
-    init(name: String, cacheDuration: TimeInterval = 3600) {
+    public init(name: String, cacheDuration: TimeInterval = 3600) {
         self.name = name
         self.cachePath = NSSearchPathForDirectoriesInDomains(.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first! + "/" + name
         //self.cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first! + "/" + name

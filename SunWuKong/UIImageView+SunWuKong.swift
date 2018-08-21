@@ -43,8 +43,10 @@ extension UIImageView {
         SunWuKong.default.image(with: url, progress: progress) { [weak self] image in
             guard let weakSelf = self else { return }
             guard weakSelf.wkImageUrl == url else { return }
-            weakSelf.image = image
-            completion?(image)
+            DispatchQueue.main.async {
+                weakSelf.image = image
+                completion?(image)
+            }
         }
     }
     
@@ -59,11 +61,10 @@ extension UIImageView {
         SunWuKong.default.image(with: storageRef2, progress: progress) { [weak self] image in
             guard let weakSelf = self else { return }
             guard weakSelf.wkImageRef == storageRef2 else { return }
-            weakSelf.image = image
-            completion?(image)
-            //guard let weakSelf.wkImageRef = storageRef else { return}
+            DispatchQueue.main.async {
+                weakSelf.image = image
+                completion?(image)
+            }
         }
-        
-        
     }
 }
