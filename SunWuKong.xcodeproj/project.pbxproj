@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CDF4177542269C73FA3380D /* Pods_SunWuKong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9E0E39DB917AC44DF861C9 /* Pods_SunWuKong.framework */; };
 		220C8AE4212AAD1B00DBB92A /* SuWuKong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8AE3212AAD1B00DBB92A /* SuWuKong.swift */; };
 		220C8AE8212AAE2300DBB92A /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8AE5212AAE2300DBB92A /* Downloader.swift */; };
 		220C8AE9212AAE2300DBB92A /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8AE6212AAE2300DBB92A /* Cache.swift */; };
 		220C8AEA212AAE2300DBB92A /* UIImageView+SunWuKong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C8AE7212AAE2300DBB92A /* UIImageView+SunWuKong.swift */; };
 		223AC2B5212AA24200892347 /* SunWuKong.h in Headers */ = {isa = PBXBuildFile; fileRef = 223AC2B3212AA24200892347 /* SunWuKong.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B3DD653AA63174871DEA9D2 /* libPods-SunWuKong.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387B6518DC8F9347389A9A05 /* libPods-SunWuKong.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +23,8 @@
 		223AC2B0212AA24200892347 /* SunWuKong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SunWuKong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		223AC2B3212AA24200892347 /* SunWuKong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SunWuKong.h; sourceTree = "<group>"; };
 		223AC2B4212AA24200892347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		387B6518DC8F9347389A9A05 /* libPods-SunWuKong.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SunWuKong.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5934C762ED91E3EDB056C620 /* Pods-SunWuKong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunWuKong.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunWuKong/Pods-SunWuKong.debug.xcconfig"; sourceTree = "<group>"; };
+		AD9E0E39DB917AC44DF861C9 /* Pods_SunWuKong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunWuKong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F583B12A6F85270372DBFD07 /* Pods-SunWuKong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunWuKong.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunWuKong/Pods-SunWuKong.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3DD653AA63174871DEA9D2 /* libPods-SunWuKong.a in Frameworks */,
+				0CDF4177542269C73FA3380D /* Pods_SunWuKong.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		C16E1C229310866C50175957 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				387B6518DC8F9347389A9A05 /* libPods-SunWuKong.a */,
+				AD9E0E39DB917AC44DF861C9 /* Pods_SunWuKong.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
