@@ -34,7 +34,10 @@ extension UIImageView {
     }
     
     public func wk_setImage(with stringUrl: String?, placeholder: UIImage? = nil, progress: DownloadProgress? = nil, completion: ImageDownloadCompletion? = nil) {
-        guard let strUrl = stringUrl else { return }
+        guard let strUrl = stringUrl else {
+            completion?(nil)
+            return
+        }
         guard let url = URL(string: strUrl) else {
             completion?(nil)
             return
