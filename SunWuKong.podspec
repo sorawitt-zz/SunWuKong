@@ -6,6 +6,7 @@ s.ios.deployment_target = '9.0'
 s.name = "SunWuKong"
 s.summary = "SunWuKong is a pure-Swift library for downloading and caching images from the Firebase Storage and URL."
 s.requires_arc = true
+s.swift_version = '4.0'
 
 # 2
 s.version = "0.0.1-beta"
