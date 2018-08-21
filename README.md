@@ -27,7 +27,7 @@ pod 'SunWuKong'
 let ref: StorageReference = ....
 imageView.wk_setImage(with: ref)
 ```
-with placeholder, progress and completion handler
+> with placeholder, progress and completion handler
 ```swift
 func setImageWithStorageReference() {
   let ref: StorageReference = Storage.storage().reference()
@@ -40,7 +40,7 @@ func setImageWithStorageReference() {
 }
 ```
 
-### With URL
+> With URL
 ```swift
 let url: URL = URL(string: "…")
 imageView.wk_setImage(with: url)
