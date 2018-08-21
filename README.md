@@ -1,5 +1,8 @@
 # SunWuKong
 
+[![Version](https://img.shields.io/cocoapods/v/SunWuKong.svg?style=flat)](http://cocoapods.org/pods/SunWuKong)
+[![License](https://img.shields.io/cocoapods/v/SunWuKong.svg?style=flat)](http://cocoapods.org/pods/SunWuKong)
+[![Platform](https://img.shields.io/cocoapods/v/SunWuKong.svg?style=flat)](http://cocoapods.org/pods/SunWuKong)
 
 ## Requirements
 Swift 4
