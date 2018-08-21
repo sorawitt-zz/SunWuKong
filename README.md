@@ -28,7 +28,7 @@ let ref: StorageReference = ....
 imageView.wk_setImage(with: ref)
 ```
 with placeholder, progress and completion handler
-```
+```swift
 func setImageWithStorageReference() {
   let ref: StorageReference = Storage.storage().reference()
   imageView.wk_setImage(with: ref, placeholder: UIImage(named: "placeholder"), progress: { received, total in
@@ -47,7 +47,7 @@ imageView.wk_setImage(with: url)
 ```
 >with placeholder, progress and completion handler
 
-```
+```swift
 func setImageWithURL() {
   let url: URL = URL(string: "…")
   imageView.wk_setImage(with: url, placeholder: UIImage(named: "placeholder"), progress: { received, total in
