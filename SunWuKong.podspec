@@ -58,7 +58,7 @@ s.dependency 'Firebase/Core'
 s.dependency 'Firebase/Storage'
 
 # 8
-s.source_files = "SunWuKong/*.{h,m,swift}"
+s.source_files = "SunWuKong"
 
 # 9
 # s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib}"
