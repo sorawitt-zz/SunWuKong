@@ -14,6 +14,7 @@ s.version = "0.0.2"
 # 3
 s.license = { :type => "MIT", :text => <<-LICENSE
     MIT License
+
 Copyright (c) 2018 Sorawit Trutsat
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
