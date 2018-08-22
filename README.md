@@ -68,7 +68,7 @@ func setImageWithURL() {
 
 ```swift
 let ref: StorageReference = ...
-SunWuKong.shared.image(with: ref) { [weak self] image in
+SunWuKong.default.image(with: ref) { [weak self] image in
   // do something with your image
 }
 ```
@@ -89,7 +89,7 @@ method of your disk caches to remove any old files:
 ```swift
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     FirebaseApp.configure()
-    SunWuKong.shared.prune()
+    SunWuKong.default.prune()
     return true
 }
 ```
